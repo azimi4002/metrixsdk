@@ -79,7 +79,8 @@ Pod::Spec.new do |spec|
 
 
 #  spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/metrixorg/MetrixSDK-iOS.git", :tag => "#{spec.version}" }
+#  spec.source       = { :git => "https://github.com/metrixorg/MetrixSDK-iOS.git", :tag => "#{spec.version}" }
+spec.source       = { :git => "https://gitlab.com/thumbtack/metrix-sdk.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
