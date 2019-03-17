@@ -2,9 +2,6 @@
 //  MetrixSdk.h
 //  MetrixSdk
 //
-//  Created by Abr Studio on 3/13/19.
-//  Copyright © 2019 sdk. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -16,4 +13,11 @@ FOUNDATION_EXPORT const unsigned char MetrixSdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MetrixSdk/PublicHeader.h>
 
-
+#import <MetrixSdk/Metrix.h>
+#import <MetrixSdk/MXCustomEvent.h>
+#import <MetrixSdk/MXConfig.h>
+#import <MetrixSdk/MXLogger.h>
+#import <MetrixSdk/MXEventSuccess.h>
+#import <MetrixSdk/MXEventFailure.h>
+#import <MetrixSdk/MXSessionSuccess.h>
+#import <MetrixSdk/MXSessionFailure.h>

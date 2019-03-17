@@ -8,12 +8,149 @@
 
 /* Begin PBXBuildFile section */
 		6404F1612239080C001AEB8F /* MetrixSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 6404F15F2239080C001AEB8F /* MetrixSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9C87223ED35A00D5CE26 /* MXSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C41223ED35A00D5CE26 /* MXSdkClickHandler.m */; };
+		642A9C88223ED35A00D5CE26 /* MXSessionFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C42223ED35A00D5CE26 /* MXSessionFailure.m */; };
+		642A9C89223ED35A00D5CE26 /* MXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C43223ED35A00D5CE26 /* MXKeychain.h */; };
+		642A9C8A223ED35A00D5CE26 /* MXPackageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C44223ED35A00D5CE26 /* MXPackageBuilder.h */; };
+		642A9C8B223ED35A00D5CE26 /* MXActivityPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C45223ED35A00D5CE26 /* MXActivityPackage.h */; };
+		642A9C8C223ED35A00D5CE26 /* MXSessionSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C46223ED35A00D5CE26 /* MXSessionSuccess.m */; };
+		642A9C8D223ED35A00D5CE26 /* MXSystemProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C47223ED35A00D5CE26 /* MXSystemProfile.h */; };
+		642A9C8E223ED35A00D5CE26 /* MXAttributionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C48223ED35A00D5CE26 /* MXAttributionHandler.m */; };
+		642A9C8F223ED35A00D5CE26 /* MXCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C49223ED35A00D5CE26 /* MXCustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9C90223ED35A00D5CE26 /* MXTimerCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C4A223ED35A00D5CE26 /* MXTimerCycle.m */; };
+		642A9C91223ED35A00D5CE26 /* MXLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C4B223ED35A00D5CE26 /* MXLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9C92223ED35A00D5CE26 /* MXActivityKind.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C4C223ED35A00D5CE26 /* MXActivityKind.h */; };
+		642A9C93223ED35A00D5CE26 /* NSData+MXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C4E223ED35A00D5CE26 /* NSData+MXAdditions.m */; };
+		642A9C94223ED35A00D5CE26 /* NSString+MXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C4F223ED35A00D5CE26 /* NSString+MXAdditions.h */; };
+		642A9C95223ED35A00D5CE26 /* UIDevice+MXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C50223ED35A00D5CE26 /* UIDevice+MXAdditions.h */; };
+		642A9C96223ED35A00D5CE26 /* NSData+MXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C51223ED35A00D5CE26 /* NSData+MXAdditions.h */; };
+		642A9C97223ED35A00D5CE26 /* NSString+MXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C52223ED35A00D5CE26 /* NSString+MXAdditions.m */; };
+		642A9C98223ED35A00D5CE26 /* UIDevice+MXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C53223ED35A00D5CE26 /* UIDevice+MXAdditions.m */; };
+		642A9C99223ED35A00D5CE26 /* MXTimerOnce.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C54223ED35A00D5CE26 /* MXTimerOnce.m */; };
+		642A9C9A223ED35A00D5CE26 /* MXDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C55223ED35A00D5CE26 /* MXDeviceInfo.m */; };
+		642A9C9B223ED35A00D5CE26 /* MXUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C56223ED35A00D5CE26 /* MXUtil.m */; };
+		642A9C9C223ED35A00D5CE26 /* MXEventSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C57223ED35A00D5CE26 /* MXEventSuccess.m */; };
+		642A9C9D223ED35A00D5CE26 /* MXBackoffStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C58223ED35A00D5CE26 /* MXBackoffStrategy.m */; };
+		642A9C9E223ED35A00D5CE26 /* MXActivityHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C59223ED35A00D5CE26 /* MXActivityHandler.h */; };
+		642A9C9F223ED35A00D5CE26 /* MXEventFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C5A223ED35A00D5CE26 /* MXEventFailure.m */; };
+		642A9CA0223ED35A00D5CE26 /* Metrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C5B223ED35A00D5CE26 /* Metrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CA1223ED35A00D5CE26 /* MXConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C5C223ED35A00D5CE26 /* MXConfig.m */; };
+		642A9CA2223ED35A00D5CE26 /* MXSessionParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C5D223ED35A00D5CE26 /* MXSessionParameters.m */; };
+		642A9CA3223ED35A00D5CE26 /* MXResponseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C5E223ED35A00D5CE26 /* MXResponseData.h */; };
+		642A9CA4223ED35A00D5CE26 /* MXMetrixFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C5F223ED35A00D5CE26 /* MXMetrixFactory.m */; };
+		642A9CA5223ED35A00D5CE26 /* MXUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C60223ED35A00D5CE26 /* MXUserDefaults.h */; };
+		642A9CA6223ED35A00D5CE26 /* MXAttribution.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C61223ED35A00D5CE26 /* MXAttribution.h */; };
+		642A9CA7223ED35A00D5CE26 /* MXEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C62223ED35A00D5CE26 /* MXEvent.h */; };
+		642A9CA8223ED35A00D5CE26 /* MXActivityState.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C63223ED35A00D5CE26 /* MXActivityState.m */; };
+		642A9CA9223ED35A00D5CE26 /* MXPackageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C64223ED35A00D5CE26 /* MXPackageHandler.h */; };
+		642A9CAA223ED35A00D5CE26 /* MXRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C65223ED35A00D5CE26 /* MXRequestHandler.m */; };
+		642A9CAB223ED35A00D5CE26 /* MXReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C66223ED35A00D5CE26 /* MXReachability.h */; };
+		642A9CAC223ED35A00D5CE26 /* MXSystemProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C67223ED35A00D5CE26 /* MXSystemProfile.m */; };
+		642A9CAD223ED35A00D5CE26 /* MXSessionSuccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C68223ED35A00D5CE26 /* MXSessionSuccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CAE223ED35A00D5CE26 /* MXActivityPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C69223ED35A00D5CE26 /* MXActivityPackage.m */; };
+		642A9CAF223ED35A00D5CE26 /* MXPackageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C6A223ED35A00D5CE26 /* MXPackageBuilder.m */; };
+		642A9CB0223ED35A00D5CE26 /* MXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C6B223ED35A00D5CE26 /* MXKeychain.m */; };
+		642A9CB1223ED35A00D5CE26 /* MXSessionFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C6C223ED35A00D5CE26 /* MXSessionFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CB2223ED35A00D5CE26 /* MXSdkClickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C6D223ED35A00D5CE26 /* MXSdkClickHandler.h */; };
+		642A9CB3223ED35A00D5CE26 /* MXActivityKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C6E223ED35A00D5CE26 /* MXActivityKind.m */; };
+		642A9CB4223ED35A00D5CE26 /* MXLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C6F223ED35A00D5CE26 /* MXLogger.m */; };
+		642A9CB5223ED35A00D5CE26 /* MXTimerCycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C70223ED35A00D5CE26 /* MXTimerCycle.h */; };
+		642A9CB6223ED35A00D5CE26 /* MXCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C71223ED35A00D5CE26 /* MXCustomEvent.m */; };
+		642A9CB7223ED35A00D5CE26 /* MXAttributionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C72223ED35A00D5CE26 /* MXAttributionHandler.h */; };
+		642A9CB8223ED35A00D5CE26 /* MXResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C73223ED35A00D5CE26 /* MXResponseData.m */; };
+		642A9CB9223ED35A00D5CE26 /* MXMetrixFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C74223ED35A00D5CE26 /* MXMetrixFactory.h */; };
+		642A9CBA223ED35A00D5CE26 /* MXSessionParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C75223ED35A00D5CE26 /* MXSessionParameters.h */; };
+		642A9CBB223ED35A00D5CE26 /* MXConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C76223ED35A00D5CE26 /* MXConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CBC223ED35A00D5CE26 /* MXEventFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C77223ED35A00D5CE26 /* MXEventFailure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CBD223ED35A00D5CE26 /* Metrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C78223ED35A00D5CE26 /* Metrix.m */; };
+		642A9CBE223ED35A00D5CE26 /* MXActivityHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C79223ED35A00D5CE26 /* MXActivityHandler.m */; };
+		642A9CBF223ED35A00D5CE26 /* MXBackoffStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C7A223ED35A00D5CE26 /* MXBackoffStrategy.h */; };
+		642A9CC0223ED35A00D5CE26 /* MXEventSuccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C7B223ED35A00D5CE26 /* MXEventSuccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642A9CC1223ED35A00D5CE26 /* MXUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C7C223ED35A00D5CE26 /* MXUtil.h */; };
+		642A9CC2223ED35A00D5CE26 /* MXDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C7D223ED35A00D5CE26 /* MXDeviceInfo.h */; };
+		642A9CC3223ED35A00D5CE26 /* MXTimerOnce.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C7E223ED35A00D5CE26 /* MXTimerOnce.h */; };
+		642A9CC4223ED35A00D5CE26 /* MXReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C7F223ED35A00D5CE26 /* MXReachability.m */; };
+		642A9CC5223ED35A00D5CE26 /* MXRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C80223ED35A00D5CE26 /* MXRequestHandler.h */; };
+		642A9CC7223ED35A00D5CE26 /* MXPackageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C82223ED35A00D5CE26 /* MXPackageHandler.m */; };
+		642A9CC8223ED35A00D5CE26 /* MXActivityState.h in Headers */ = {isa = PBXBuildFile; fileRef = 642A9C83223ED35A00D5CE26 /* MXActivityState.h */; };
+		642A9CC9223ED35A00D5CE26 /* MXAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C84223ED35A00D5CE26 /* MXAttribution.m */; };
+		642A9CCA223ED35A00D5CE26 /* MXEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C85223ED35A00D5CE26 /* MXEvent.m */; };
+		642A9CCB223ED35A00D5CE26 /* MXUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C86223ED35A00D5CE26 /* MXUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6404F15C2239080C001AEB8F /* MetrixSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetrixSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6404F15F2239080C001AEB8F /* MetrixSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetrixSdk.h; sourceTree = "<group>"; };
 		6404F1602239080C001AEB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642A9C41223ED35A00D5CE26 /* MXSdkClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSdkClickHandler.m; sourceTree = "<group>"; };
+		642A9C42223ED35A00D5CE26 /* MXSessionFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSessionFailure.m; sourceTree = "<group>"; };
+		642A9C43223ED35A00D5CE26 /* MXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXKeychain.h; sourceTree = "<group>"; };
+		642A9C44223ED35A00D5CE26 /* MXPackageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPackageBuilder.h; sourceTree = "<group>"; };
+		642A9C45223ED35A00D5CE26 /* MXActivityPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXActivityPackage.h; sourceTree = "<group>"; };
+		642A9C46223ED35A00D5CE26 /* MXSessionSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSessionSuccess.m; sourceTree = "<group>"; };
+		642A9C47223ED35A00D5CE26 /* MXSystemProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSystemProfile.h; sourceTree = "<group>"; };
+		642A9C48223ED35A00D5CE26 /* MXAttributionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAttributionHandler.m; sourceTree = "<group>"; };
+		642A9C49223ED35A00D5CE26 /* MXCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCustomEvent.h; sourceTree = "<group>"; };
+		642A9C4A223ED35A00D5CE26 /* MXTimerCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTimerCycle.m; sourceTree = "<group>"; };
+		642A9C4B223ED35A00D5CE26 /* MXLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLogger.h; sourceTree = "<group>"; };
+		642A9C4C223ED35A00D5CE26 /* MXActivityKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXActivityKind.h; sourceTree = "<group>"; };
+		642A9C4E223ED35A00D5CE26 /* NSData+MXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MXAdditions.m"; sourceTree = "<group>"; };
+		642A9C4F223ED35A00D5CE26 /* NSString+MXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MXAdditions.h"; sourceTree = "<group>"; };
+		642A9C50223ED35A00D5CE26 /* UIDevice+MXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MXAdditions.h"; sourceTree = "<group>"; };
+		642A9C51223ED35A00D5CE26 /* NSData+MXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MXAdditions.h"; sourceTree = "<group>"; };
+		642A9C52223ED35A00D5CE26 /* NSString+MXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MXAdditions.m"; sourceTree = "<group>"; };
+		642A9C53223ED35A00D5CE26 /* UIDevice+MXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MXAdditions.m"; sourceTree = "<group>"; };
+		642A9C54223ED35A00D5CE26 /* MXTimerOnce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXTimerOnce.m; sourceTree = "<group>"; };
+		642A9C55223ED35A00D5CE26 /* MXDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXDeviceInfo.m; sourceTree = "<group>"; };
+		642A9C56223ED35A00D5CE26 /* MXUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXUtil.m; sourceTree = "<group>"; };
+		642A9C57223ED35A00D5CE26 /* MXEventSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXEventSuccess.m; sourceTree = "<group>"; };
+		642A9C58223ED35A00D5CE26 /* MXBackoffStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBackoffStrategy.m; sourceTree = "<group>"; };
+		642A9C59223ED35A00D5CE26 /* MXActivityHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXActivityHandler.h; sourceTree = "<group>"; };
+		642A9C5A223ED35A00D5CE26 /* MXEventFailure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXEventFailure.m; sourceTree = "<group>"; };
+		642A9C5B223ED35A00D5CE26 /* Metrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrix.h; sourceTree = "<group>"; };
+		642A9C5C223ED35A00D5CE26 /* MXConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXConfig.m; sourceTree = "<group>"; };
+		642A9C5D223ED35A00D5CE26 /* MXSessionParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSessionParameters.m; sourceTree = "<group>"; };
+		642A9C5E223ED35A00D5CE26 /* MXResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXResponseData.h; sourceTree = "<group>"; };
+		642A9C5F223ED35A00D5CE26 /* MXMetrixFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMetrixFactory.m; sourceTree = "<group>"; };
+		642A9C60223ED35A00D5CE26 /* MXUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXUserDefaults.h; sourceTree = "<group>"; };
+		642A9C61223ED35A00D5CE26 /* MXAttribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAttribution.h; sourceTree = "<group>"; };
+		642A9C62223ED35A00D5CE26 /* MXEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXEvent.h; sourceTree = "<group>"; };
+		642A9C63223ED35A00D5CE26 /* MXActivityState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXActivityState.m; sourceTree = "<group>"; };
+		642A9C64223ED35A00D5CE26 /* MXPackageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPackageHandler.h; sourceTree = "<group>"; };
+		642A9C65223ED35A00D5CE26 /* MXRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXRequestHandler.m; sourceTree = "<group>"; };
+		642A9C66223ED35A00D5CE26 /* MXReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXReachability.h; sourceTree = "<group>"; };
+		642A9C67223ED35A00D5CE26 /* MXSystemProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSystemProfile.m; sourceTree = "<group>"; };
+		642A9C68223ED35A00D5CE26 /* MXSessionSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSessionSuccess.h; sourceTree = "<group>"; };
+		642A9C69223ED35A00D5CE26 /* MXActivityPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXActivityPackage.m; sourceTree = "<group>"; };
+		642A9C6A223ED35A00D5CE26 /* MXPackageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPackageBuilder.m; sourceTree = "<group>"; };
+		642A9C6B223ED35A00D5CE26 /* MXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXKeychain.m; sourceTree = "<group>"; };
+		642A9C6C223ED35A00D5CE26 /* MXSessionFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSessionFailure.h; sourceTree = "<group>"; };
+		642A9C6D223ED35A00D5CE26 /* MXSdkClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSdkClickHandler.h; sourceTree = "<group>"; };
+		642A9C6E223ED35A00D5CE26 /* MXActivityKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXActivityKind.m; sourceTree = "<group>"; };
+		642A9C6F223ED35A00D5CE26 /* MXLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLogger.m; sourceTree = "<group>"; };
+		642A9C70223ED35A00D5CE26 /* MXTimerCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTimerCycle.h; sourceTree = "<group>"; };
+		642A9C71223ED35A00D5CE26 /* MXCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCustomEvent.m; sourceTree = "<group>"; };
+		642A9C72223ED35A00D5CE26 /* MXAttributionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAttributionHandler.h; sourceTree = "<group>"; };
+		642A9C73223ED35A00D5CE26 /* MXResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXResponseData.m; sourceTree = "<group>"; };
+		642A9C74223ED35A00D5CE26 /* MXMetrixFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMetrixFactory.h; sourceTree = "<group>"; };
+		642A9C75223ED35A00D5CE26 /* MXSessionParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSessionParameters.h; sourceTree = "<group>"; };
+		642A9C76223ED35A00D5CE26 /* MXConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXConfig.h; sourceTree = "<group>"; };
+		642A9C77223ED35A00D5CE26 /* MXEventFailure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXEventFailure.h; sourceTree = "<group>"; };
+		642A9C78223ED35A00D5CE26 /* Metrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metrix.m; sourceTree = "<group>"; };
+		642A9C79223ED35A00D5CE26 /* MXActivityHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXActivityHandler.m; sourceTree = "<group>"; };
+		642A9C7A223ED35A00D5CE26 /* MXBackoffStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBackoffStrategy.h; sourceTree = "<group>"; };
+		642A9C7B223ED35A00D5CE26 /* MXEventSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXEventSuccess.h; sourceTree = "<group>"; };
+		642A9C7C223ED35A00D5CE26 /* MXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXUtil.h; sourceTree = "<group>"; };
+		642A9C7D223ED35A00D5CE26 /* MXDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXDeviceInfo.h; sourceTree = "<group>"; };
+		642A9C7E223ED35A00D5CE26 /* MXTimerOnce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXTimerOnce.h; sourceTree = "<group>"; };
+		642A9C7F223ED35A00D5CE26 /* MXReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXReachability.m; sourceTree = "<group>"; };
+		642A9C80223ED35A00D5CE26 /* MXRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXRequestHandler.h; sourceTree = "<group>"; };
+		642A9C81223ED35A00D5CE26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642A9C82223ED35A00D5CE26 /* MXPackageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPackageHandler.m; sourceTree = "<group>"; };
+		642A9C83223ED35A00D5CE26 /* MXActivityState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXActivityState.h; sourceTree = "<group>"; };
+		642A9C84223ED35A00D5CE26 /* MXAttribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAttribution.m; sourceTree = "<group>"; };
+		642A9C85223ED35A00D5CE26 /* MXEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXEvent.m; sourceTree = "<group>"; };
+		642A9C86223ED35A00D5CE26 /* MXUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +183,95 @@
 		6404F15E2239080C001AEB8F /* MetrixSdk */ = {
 			isa = PBXGroup;
 			children = (
+				642A9C40223ED35A00D5CE26 /* Metrix */,
 				6404F15F2239080C001AEB8F /* MetrixSdk.h */,
 				6404F1602239080C001AEB8F /* Info.plist */,
 			);
 			path = MetrixSdk;
+			sourceTree = "<group>";
+		};
+		642A9C40223ED35A00D5CE26 /* Metrix */ = {
+			isa = PBXGroup;
+			children = (
+				642A9C41223ED35A00D5CE26 /* MXSdkClickHandler.m */,
+				642A9C42223ED35A00D5CE26 /* MXSessionFailure.m */,
+				642A9C43223ED35A00D5CE26 /* MXKeychain.h */,
+				642A9C44223ED35A00D5CE26 /* MXPackageBuilder.h */,
+				642A9C45223ED35A00D5CE26 /* MXActivityPackage.h */,
+				642A9C46223ED35A00D5CE26 /* MXSessionSuccess.m */,
+				642A9C47223ED35A00D5CE26 /* MXSystemProfile.h */,
+				642A9C48223ED35A00D5CE26 /* MXAttributionHandler.m */,
+				642A9C49223ED35A00D5CE26 /* MXCustomEvent.h */,
+				642A9C4A223ED35A00D5CE26 /* MXTimerCycle.m */,
+				642A9C4B223ED35A00D5CE26 /* MXLogger.h */,
+				642A9C4C223ED35A00D5CE26 /* MXActivityKind.h */,
+				642A9C4D223ED35A00D5CE26 /* MXAdditions */,
+				642A9C54223ED35A00D5CE26 /* MXTimerOnce.m */,
+				642A9C55223ED35A00D5CE26 /* MXDeviceInfo.m */,
+				642A9C56223ED35A00D5CE26 /* MXUtil.m */,
+				642A9C57223ED35A00D5CE26 /* MXEventSuccess.m */,
+				642A9C58223ED35A00D5CE26 /* MXBackoffStrategy.m */,
+				642A9C59223ED35A00D5CE26 /* MXActivityHandler.h */,
+				642A9C5A223ED35A00D5CE26 /* MXEventFailure.m */,
+				642A9C5B223ED35A00D5CE26 /* Metrix.h */,
+				642A9C5C223ED35A00D5CE26 /* MXConfig.m */,
+				642A9C5D223ED35A00D5CE26 /* MXSessionParameters.m */,
+				642A9C5E223ED35A00D5CE26 /* MXResponseData.h */,
+				642A9C5F223ED35A00D5CE26 /* MXMetrixFactory.m */,
+				642A9C60223ED35A00D5CE26 /* MXUserDefaults.h */,
+				642A9C61223ED35A00D5CE26 /* MXAttribution.h */,
+				642A9C62223ED35A00D5CE26 /* MXEvent.h */,
+				642A9C63223ED35A00D5CE26 /* MXActivityState.m */,
+				642A9C64223ED35A00D5CE26 /* MXPackageHandler.h */,
+				642A9C65223ED35A00D5CE26 /* MXRequestHandler.m */,
+				642A9C66223ED35A00D5CE26 /* MXReachability.h */,
+				642A9C67223ED35A00D5CE26 /* MXSystemProfile.m */,
+				642A9C68223ED35A00D5CE26 /* MXSessionSuccess.h */,
+				642A9C69223ED35A00D5CE26 /* MXActivityPackage.m */,
+				642A9C6A223ED35A00D5CE26 /* MXPackageBuilder.m */,
+				642A9C6B223ED35A00D5CE26 /* MXKeychain.m */,
+				642A9C6C223ED35A00D5CE26 /* MXSessionFailure.h */,
+				642A9C6D223ED35A00D5CE26 /* MXSdkClickHandler.h */,
+				642A9C6E223ED35A00D5CE26 /* MXActivityKind.m */,
+				642A9C6F223ED35A00D5CE26 /* MXLogger.m */,
+				642A9C70223ED35A00D5CE26 /* MXTimerCycle.h */,
+				642A9C71223ED35A00D5CE26 /* MXCustomEvent.m */,
+				642A9C72223ED35A00D5CE26 /* MXAttributionHandler.h */,
+				642A9C73223ED35A00D5CE26 /* MXResponseData.m */,
+				642A9C74223ED35A00D5CE26 /* MXMetrixFactory.h */,
+				642A9C75223ED35A00D5CE26 /* MXSessionParameters.h */,
+				642A9C76223ED35A00D5CE26 /* MXConfig.h */,
+				642A9C77223ED35A00D5CE26 /* MXEventFailure.h */,
+				642A9C78223ED35A00D5CE26 /* Metrix.m */,
+				642A9C79223ED35A00D5CE26 /* MXActivityHandler.m */,
+				642A9C7A223ED35A00D5CE26 /* MXBackoffStrategy.h */,
+				642A9C7B223ED35A00D5CE26 /* MXEventSuccess.h */,
+				642A9C7C223ED35A00D5CE26 /* MXUtil.h */,
+				642A9C7D223ED35A00D5CE26 /* MXDeviceInfo.h */,
+				642A9C7E223ED35A00D5CE26 /* MXTimerOnce.h */,
+				642A9C7F223ED35A00D5CE26 /* MXReachability.m */,
+				642A9C80223ED35A00D5CE26 /* MXRequestHandler.h */,
+				642A9C81223ED35A00D5CE26 /* Info.plist */,
+				642A9C82223ED35A00D5CE26 /* MXPackageHandler.m */,
+				642A9C83223ED35A00D5CE26 /* MXActivityState.h */,
+				642A9C84223ED35A00D5CE26 /* MXAttribution.m */,
+				642A9C85223ED35A00D5CE26 /* MXEvent.m */,
+				642A9C86223ED35A00D5CE26 /* MXUserDefaults.m */,
+			);
+			path = Metrix;
+			sourceTree = "<group>";
+		};
+		642A9C4D223ED35A00D5CE26 /* MXAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				642A9C4E223ED35A00D5CE26 /* NSData+MXAdditions.m */,
+				642A9C4F223ED35A00D5CE26 /* NSString+MXAdditions.h */,
+				642A9C50223ED35A00D5CE26 /* UIDevice+MXAdditions.h */,
+				642A9C51223ED35A00D5CE26 /* NSData+MXAdditions.h */,
+				642A9C52223ED35A00D5CE26 /* NSString+MXAdditions.m */,
+				642A9C53223ED35A00D5CE26 /* UIDevice+MXAdditions.m */,
+			);
+			path = MXAdditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +281,41 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642A9CBA223ED35A00D5CE26 /* MXSessionParameters.h in Headers */,
+				642A9C91223ED35A00D5CE26 /* MXLogger.h in Headers */,
+				642A9C8F223ED35A00D5CE26 /* MXCustomEvent.h in Headers */,
+				642A9CA0223ED35A00D5CE26 /* Metrix.h in Headers */,
+				642A9CAD223ED35A00D5CE26 /* MXSessionSuccess.h in Headers */,
+				642A9CBB223ED35A00D5CE26 /* MXConfig.h in Headers */,
+				642A9CC0223ED35A00D5CE26 /* MXEventSuccess.h in Headers */,
+				642A9CB1223ED35A00D5CE26 /* MXSessionFailure.h in Headers */,
+				642A9CBC223ED35A00D5CE26 /* MXEventFailure.h in Headers */,
+				642A9CB9223ED35A00D5CE26 /* MXMetrixFactory.h in Headers */,
+				642A9C8D223ED35A00D5CE26 /* MXSystemProfile.h in Headers */,
+				642A9C95223ED35A00D5CE26 /* UIDevice+MXAdditions.h in Headers */,
+				642A9CC2223ED35A00D5CE26 /* MXDeviceInfo.h in Headers */,
+				642A9CA7223ED35A00D5CE26 /* MXEvent.h in Headers */,
+				642A9CB7223ED35A00D5CE26 /* MXAttributionHandler.h in Headers */,
+				642A9CB5223ED35A00D5CE26 /* MXTimerCycle.h in Headers */,
+				642A9C94223ED35A00D5CE26 /* NSString+MXAdditions.h in Headers */,
+				642A9C8A223ED35A00D5CE26 /* MXPackageBuilder.h in Headers */,
+				642A9C9E223ED35A00D5CE26 /* MXActivityHandler.h in Headers */,
 				6404F1612239080C001AEB8F /* MetrixSdk.h in Headers */,
+				642A9CA5223ED35A00D5CE26 /* MXUserDefaults.h in Headers */,
+				642A9C89223ED35A00D5CE26 /* MXKeychain.h in Headers */,
+				642A9CA3223ED35A00D5CE26 /* MXResponseData.h in Headers */,
+				642A9CA9223ED35A00D5CE26 /* MXPackageHandler.h in Headers */,
+				642A9C96223ED35A00D5CE26 /* NSData+MXAdditions.h in Headers */,
+				642A9C92223ED35A00D5CE26 /* MXActivityKind.h in Headers */,
+				642A9CAB223ED35A00D5CE26 /* MXReachability.h in Headers */,
+				642A9CB2223ED35A00D5CE26 /* MXSdkClickHandler.h in Headers */,
+				642A9C8B223ED35A00D5CE26 /* MXActivityPackage.h in Headers */,
+				642A9CC1223ED35A00D5CE26 /* MXUtil.h in Headers */,
+				642A9CC5223ED35A00D5CE26 /* MXRequestHandler.h in Headers */,
+				642A9CBF223ED35A00D5CE26 /* MXBackoffStrategy.h in Headers */,
+				642A9CC3223ED35A00D5CE26 /* MXTimerOnce.h in Headers */,
+				642A9CC8223ED35A00D5CE26 /* MXActivityState.h in Headers */,
+				642A9CA6223ED35A00D5CE26 /* MXAttribution.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +386,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642A9CBD223ED35A00D5CE26 /* Metrix.m in Sources */,
+				642A9C8C223ED35A00D5CE26 /* MXSessionSuccess.m in Sources */,
+				642A9CB8223ED35A00D5CE26 /* MXResponseData.m in Sources */,
+				642A9C90223ED35A00D5CE26 /* MXTimerCycle.m in Sources */,
+				642A9CC9223ED35A00D5CE26 /* MXAttribution.m in Sources */,
+				642A9CAA223ED35A00D5CE26 /* MXRequestHandler.m in Sources */,
+				642A9CB3223ED35A00D5CE26 /* MXActivityKind.m in Sources */,
+				642A9CB4223ED35A00D5CE26 /* MXLogger.m in Sources */,
+				642A9C9B223ED35A00D5CE26 /* MXUtil.m in Sources */,
+				642A9C9D223ED35A00D5CE26 /* MXBackoffStrategy.m in Sources */,
+				642A9C8E223ED35A00D5CE26 /* MXAttributionHandler.m in Sources */,
+				642A9C93223ED35A00D5CE26 /* NSData+MXAdditions.m in Sources */,
+				642A9CB0223ED35A00D5CE26 /* MXKeychain.m in Sources */,
+				642A9CAE223ED35A00D5CE26 /* MXActivityPackage.m in Sources */,
+				642A9C99223ED35A00D5CE26 /* MXTimerOnce.m in Sources */,
+				642A9C97223ED35A00D5CE26 /* NSString+MXAdditions.m in Sources */,
+				642A9CCA223ED35A00D5CE26 /* MXEvent.m in Sources */,
+				642A9CC4223ED35A00D5CE26 /* MXReachability.m in Sources */,
+				642A9C9F223ED35A00D5CE26 /* MXEventFailure.m in Sources */,
+				642A9CA1223ED35A00D5CE26 /* MXConfig.m in Sources */,
+				642A9C9C223ED35A00D5CE26 /* MXEventSuccess.m in Sources */,
+				642A9CA8223ED35A00D5CE26 /* MXActivityState.m in Sources */,
+				642A9CC7223ED35A00D5CE26 /* MXPackageHandler.m in Sources */,
+				642A9C9A223ED35A00D5CE26 /* MXDeviceInfo.m in Sources */,
+				642A9C88223ED35A00D5CE26 /* MXSessionFailure.m in Sources */,
+				642A9CAC223ED35A00D5CE26 /* MXSystemProfile.m in Sources */,
+				642A9CA4223ED35A00D5CE26 /* MXMetrixFactory.m in Sources */,
+				642A9CA2223ED35A00D5CE26 /* MXSessionParameters.m in Sources */,
+				642A9CBE223ED35A00D5CE26 /* MXActivityHandler.m in Sources */,
+				642A9CB6223ED35A00D5CE26 /* MXCustomEvent.m in Sources */,
+				642A9CAF223ED35A00D5CE26 /* MXPackageBuilder.m in Sources */,
+				642A9CCB223ED35A00D5CE26 /* MXUserDefaults.m in Sources */,
+				642A9C98223ED35A00D5CE26 /* UIDevice+MXAdditions.m in Sources */,
+				642A9C87223ED35A00D5CE26 /* MXSdkClickHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -244,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -257,6 +547,7 @@
 		6404F1652239080C001AEB8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -264,6 +555,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = MetrixSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -271,6 +563,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ir.metrix.MetrixSdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -281,6 +574,7 @@
 		6404F1662239080C001AEB8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -288,6 +582,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				INFOPLIST_FILE = MetrixSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
