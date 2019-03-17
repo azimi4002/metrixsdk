@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MetrixSdk"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0"
   spec.summary      = "MetrixSdk is for tracking your app."
 
   # This description is used to generate tags and improve search results.
@@ -78,8 +78,8 @@ Pod::Spec.new do |spec|
   #
 
 
-  spec.source       = { :path => '.' }
-#	spec.source       = { :git => "https://github.com/metrixorg/MetrixSDK-iOS.git", :tag => "#{spec.version}" }
+#  spec.source       = { :path => '.' }
+  spec.source       = { :git => "https://github.com/metrixorg/MetrixSDK-iOS.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
