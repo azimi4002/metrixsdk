@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0212189E228767C50080F8CB /* MXLocationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0212189C228767C40080F8CB /* MXLocationHandler.h */; };
+		0212189F228767C50080F8CB /* MXLocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0212189D228767C50080F8CB /* MXLocationHandler.m */; };
 		6404F1612239080C001AEB8F /* MetrixSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 6404F15F2239080C001AEB8F /* MetrixSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		642A9C87223ED35A00D5CE26 /* MXSdkClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C41223ED35A00D5CE26 /* MXSdkClickHandler.m */; };
 		642A9C88223ED35A00D5CE26 /* MXSessionFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 642A9C42223ED35A00D5CE26 /* MXSessionFailure.m */; };
@@ -79,6 +81,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0212189C228767C40080F8CB /* MXLocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MXLocationHandler.h; path = Metrix/MXLocationHandler.h; sourceTree = SOURCE_ROOT; };
+		0212189D228767C50080F8CB /* MXLocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MXLocationHandler.m; path = Metrix/MXLocationHandler.m; sourceTree = SOURCE_ROOT; };
 		6404F15C2239080C001AEB8F /* MetrixSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetrixSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6404F15F2239080C001AEB8F /* MetrixSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetrixSdk.h; sourceTree = "<group>"; };
 		6404F1602239080C001AEB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		6404F1522239080C001AEB8F = {
 			isa = PBXGroup;
 			children = (
+				642A9C40223ED35A00D5CE26 /* Metrix */,
 				6404F15E2239080C001AEB8F /* MetrixSdk */,
 				6404F15D2239080C001AEB8F /* Products */,
 			);
@@ -183,7 +188,6 @@
 		6404F15E2239080C001AEB8F /* MetrixSdk */ = {
 			isa = PBXGroup;
 			children = (
-				642A9C40223ED35A00D5CE26 /* Metrix */,
 				6404F15F2239080C001AEB8F /* MetrixSdk.h */,
 				6404F1602239080C001AEB8F /* Info.plist */,
 			);
@@ -193,6 +197,8 @@
 		642A9C40223ED35A00D5CE26 /* Metrix */ = {
 			isa = PBXGroup;
 			children = (
+				0212189C228767C40080F8CB /* MXLocationHandler.h */,
+				0212189D228767C50080F8CB /* MXLocationHandler.m */,
 				642A9C41223ED35A00D5CE26 /* MXSdkClickHandler.m */,
 				642A9C42223ED35A00D5CE26 /* MXSessionFailure.m */,
 				642A9C43223ED35A00D5CE26 /* MXKeychain.h */,
@@ -258,7 +264,8 @@
 				642A9C85223ED35A00D5CE26 /* MXEvent.m */,
 				642A9C86223ED35A00D5CE26 /* MXUserDefaults.m */,
 			);
-			path = Metrix;
+			name = Metrix;
+			path = MetrixSdk/Metrix;
 			sourceTree = "<group>";
 		};
 		642A9C4D223ED35A00D5CE26 /* MXAdditions */ = {
@@ -290,6 +297,7 @@
 				642A9CC0223ED35A00D5CE26 /* MXEventSuccess.h in Headers */,
 				642A9CB1223ED35A00D5CE26 /* MXSessionFailure.h in Headers */,
 				642A9CBC223ED35A00D5CE26 /* MXEventFailure.h in Headers */,
+				0212189E228767C50080F8CB /* MXLocationHandler.h in Headers */,
 				642A9CB9223ED35A00D5CE26 /* MXMetrixFactory.h in Headers */,
 				642A9C8D223ED35A00D5CE26 /* MXSystemProfile.h in Headers */,
 				642A9C95223ED35A00D5CE26 /* UIDevice+MXAdditions.h in Headers */,
@@ -403,6 +411,7 @@
 				642A9C99223ED35A00D5CE26 /* MXTimerOnce.m in Sources */,
 				642A9C97223ED35A00D5CE26 /* NSString+MXAdditions.m in Sources */,
 				642A9CCA223ED35A00D5CE26 /* MXEvent.m in Sources */,
+				0212189F228767C50080F8CB /* MXLocationHandler.m in Sources */,
 				642A9CC4223ED35A00D5CE26 /* MXReachability.m in Sources */,
 				642A9C9F223ED35A00D5CE26 /* MXEventFailure.m in Sources */,
 				642A9CA1223ED35A00D5CE26 /* MXConfig.m in Sources */,
